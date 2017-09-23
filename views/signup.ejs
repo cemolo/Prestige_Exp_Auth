@@ -1,0 +1,51 @@
+<% include partials/head %>
+
+
+   <body>
+ 
+
+  <aside style="padding-top: 20px; padding-bottom: 20px;">
+
+    
+  
+    <div class="card" style="width: 65rem; padding-right:20px; padding-left: 20px; padding-bottom: 8px; background-color: rgba(177, 194, 203, .85); text-align: center; border-radius: 7px;">
+        <div class="card-body" style=" padding: 20px;">
+      
+          
+<img src="./logo-image.png";>
+<hr style="height: 3px;">
+        <div class= "back" style= "background-color: rgba(56, 84, 98, .85); padding-bottom: 30px; padding-right:20px; padding-left: 20px; border-radius: 7px;">
+        <h1 style="font-family: Bookman Old Style; font-size: 40px; font-weight: bold; padding-bottom:8px;"><span class="fa fa-sign-in"></span> Signup</h1>
+
+        <% if (message != null) { %>
+          <div class="alert-danger"><%= message %></div>
+        <% } %>
+
+        <form action="/signup" method="post">
+          <div class="form-group">
+                      <label style="font-family: Bookman Old Style; font-size: 20px;">Email</label>
+                      <input type="text" class="form-control" name="email">
+                  </div>
+           <div class="form-group">
+                    <label style="font-family: Bookman Old Style; font-size: 20px;">Password</label>
+                    <input type="password" class="form-control" name="password" />
+                    
+                    <hr>
+                  </div>
+          <div>
+            <input style="font-family: Bookman Old Style; font-size: 20px; font-weight: bold;" type="submit" class="form-control" value="Submit" />
+                  </div>
+        </form>
+      </div>
+    </div>
+      <div class= "bottomBack" style= "background-color: rgba(56, 84, 98, .85); padding-bottom: 5px; padding-top:5px; border-radius: 7px;">
+                  <span class="fa fa-sign-in"> Don't have an account?<a href="/signup"> Signup</a></span>
+                  <p >Or go <a href="/">home</a>.</p>
+          </div>
+     </div>
+    </div>
+    </aside>
+  </body>
+
+
+</html>

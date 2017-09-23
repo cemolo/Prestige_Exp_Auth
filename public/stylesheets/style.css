@@ -1,0 +1,45 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+  background-size: cover;
+
+  margin-bottom: 250px;
+padding-top: 75px;
+
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+.logo {
+	
+	padding-left: 542px;
+	padding-bottom: 85px;
+	left: 500px;
+    top: 500px;
+
+}
+
+.card {
+	
+	padding-left: 290px;
+	padding-right: 290px;
+}
+
+
+.text {
+	
+	padding-left: 170px;
+	padding-bottom: 60px;
+	
+	
+}
+
+
+
+
