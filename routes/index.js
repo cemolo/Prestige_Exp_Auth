@@ -24,7 +24,7 @@ router.get('/logout', function(req, res) {
 });
 
 router.post('/signup', passport.authenticate('local-signup', {
-  successRedirect: '/profile',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
   failureRedirect: '/signup',
   failureFlash: true,
 }));
