@@ -53,7 +53,7 @@ router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 
 
 router.get('/auth/google/callback', passport.authenticate('google', {
   successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
-  failureRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
+  failureRedirect: '/',
 }));
 
 module.exports = router;
@@ -61,5 +61,5 @@ module.exports = router;
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated())
       return next();
-  res.redirect('/');
+  res.redirect('https://prestige-world-wide-2.herokuapp.com/app');
 }
