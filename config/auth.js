@@ -12,6 +12,6 @@ module.exports = {
   googleAuth: {
     clientID: '540016092664-27cdnbipjcao6gmtv0o3qaq52f1ehigi.apps.googleusercontent.com',
     clientSecret: '-9PHhAhAhfqgSJy_c2pyp3bY',
-    callbackURL: 'https://prestige-world-wide-2.herokuapp.com/app',
+    callbackURL: 'https://prestige-world-wide-2.herokuapp.com/app/auth/google/callback',
   },
 };
