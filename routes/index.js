@@ -61,5 +61,5 @@ module.exports = router;
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated())
       return next();
-  res.redirect('https://prestige-world-wide-2.herokuapp.com/app');
+  res.redirect('/');
 }
