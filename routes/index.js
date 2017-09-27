@@ -52,7 +52,7 @@ router.get('/auth/twitter/callback', passport.authenticate('twitter', {
 router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 router.get('/auth/google/callback', passport.authenticate('google', {
-  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app/auth/google/callback',
   failureRedirect: '/',
 }));
 
