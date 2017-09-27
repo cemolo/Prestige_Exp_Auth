@@ -30,7 +30,7 @@ router.post('/signup', passport.authenticate('local-signup', {
 }));
 
 router.post('/login', passport.authenticate('local-login', {
-  successRedirect: '/profile',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
   failureRedirect: '/login',
   failureFlash: true,
 }));
@@ -38,21 +38,21 @@ router.post('/login', passport.authenticate('local-login', {
 router.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
 
 router.get('/auth/facebook/callback', passport.authenticate('facebook', {
-  successRedirect: '/profile',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
   failureRedirect: '/',
 }));
 
 router.get('/auth/twitter', passport.authenticate('twitter'));
 
 router.get('/auth/twitter/callback', passport.authenticate('twitter', {
-  successRedirect: '/profile',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
   failureRedirect: '/',
 }));
 
 router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 router.get('/auth/google/callback', passport.authenticate('google', {
-  successRedirect: '/profile',
+  successRedirect: 'https://prestige-world-wide-2.herokuapp.com/app',
   failureRedirect: '/',
 }));
 
